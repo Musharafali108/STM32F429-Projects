@@ -853,14 +853,14 @@ LOAD D:/Install/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mc
  .debug_macro   0x000022d0    0x17fd8 ./Src/main.o
  .debug_macro   0x0001a2a8       0x6d ./Src/main.o
 
-.debug_line     0x00000000      0x5ac
- .debug_line    0x00000000      0x531 ./Src/main.o
- .debug_line    0x00000531       0x7b ./Startup/startup_stm32f429zitx.o
+.debug_line     0x00000000      0x5aa
+ .debug_line    0x00000000      0x52f ./Src/main.o
+ .debug_line    0x0000052f       0x7b ./Startup/startup_stm32f429zitx.o
 
-.debug_str      0x00000000    0x93757
- .debug_str     0x00000000    0x93757 ./Src/main.o
-                              0x93881 (size before relaxing)
- .debug_str     0x00093757       0x5e ./Startup/startup_stm32f429zitx.o
+.debug_str      0x00000000    0x9377e
+ .debug_str     0x00000000    0x9377e ./Src/main.o
+                              0x93889 (size before relaxing)
+ .debug_str     0x0009377e       0x5e ./Startup/startup_stm32f429zitx.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Src/main.o

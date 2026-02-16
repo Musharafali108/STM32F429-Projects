@@ -2,28 +2,25 @@
 
 #define GPIOBEN			(1<<1)
 #define GPIOAEN			(1<<0)
-
 #define BUTTON 			(1<<0)
-
-
-
-
 
 int main(void)
 {
+	/*Given the clock*/
 	RCC->AHB1ENR |= GPIOBEN;
 	RCC->AHB1ENR |= GPIOAEN;
 
-	/*set GPIOB as a output*/
+	/*Set GPIOB as a output*/
 	GPIOB->MODER |= (1<<26);
 	GPIOB->MODER &= ~(1<<27);
 
-	/*set GPIOB as a output*/
+	/*Set GPIOB as a output*/
 	GPIOA->MODER &= ~(1<<0);
 	GPIOA->MODER &= ~(1<<1);
 
 	while(1)
 	{
+		/*Check the button condition*/
 		if(GPIOA->IDR & BUTTON)
 		{
 			GPIOB->ODR |= (1<<13);
