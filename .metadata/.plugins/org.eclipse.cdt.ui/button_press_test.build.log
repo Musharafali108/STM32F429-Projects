@@ -1,0 +1,17 @@
+13:55:53 **** Incremental Build of configuration Debug for project button_press_test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "button_press_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\stm_work\button_press_test\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="button_press_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: button_press_test.elf
+ 
+arm-none-eabi-size  button_press_test.elf 
+arm-none-eabi-objdump -h -S button_press_test.elf  > "button_press_test.list"
+   text	   data	    bss	    dec	    hex	filename
+  12108	     12	   1724	  13844	   3614	button_press_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: button_press_test.list
+ 
+
+13:55:55 Build Finished. 0 errors, 0 warnings. (took 1s.697ms)
+

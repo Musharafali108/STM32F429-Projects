@@ -1,0 +1,10 @@
+06:43:07 **** Incremental Build of configuration Release for project 2_led_toggle_header ****
+make -j4 all 
+arm-none-eabi-size  2_led_toggle_header.elf 
+   text	   data	    bss	    dec	    hex	filename
+    736	      0	   1568	   2304	    900	2_led_toggle_header.elf
+Finished building: default.size.stdout
+ 
+
+06:43:07 Build Finished. 0 errors, 0 warnings. (took 275ms)
+

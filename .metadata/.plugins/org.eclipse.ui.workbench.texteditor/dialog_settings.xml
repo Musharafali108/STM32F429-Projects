@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="CR2_CONT"/>
+		<item value="ADC_CH1"/>
+		<item value="__io_putchar"/>
+		<item value="compute_uart_bd"/>
+		<item value="APB1_CLK"/>
+		<item value="uart_set_baudrate"/>
+		<item value="gpio"/>
+		<item value="first_press_time"/>
+	</list>
+</section>

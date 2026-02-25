@@ -1,0 +1,17 @@
+17:34:03 **** Incremental Build of configuration Release for project led_toggle_header ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DSTM32F429xx -c -I../Inc -I"D:/STM32F411/Chip_headers/Device/ST/STM32F4xx/Include" -I"D:/STM32F411/Chip_headers/Include" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "led_toggle_header.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\stm_work\led_toggle_header\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="led_toggle_header.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: led_toggle_header.elf
+ 
+arm-none-eabi-size  led_toggle_header.elf 
+arm-none-eabi-objdump -h -S led_toggle_header.elf  > "led_toggle_header.list"
+   text	   data	    bss	    dec	    hex	filename
+    736	      0	   1568	   2304	    900	led_toggle_header.elf
+Finished building: default.size.stdout
+ 
+Finished building: led_toggle_header.list
+ 
+
+17:34:03 Build Finished. 0 errors, 0 warnings. (took 697ms)
+

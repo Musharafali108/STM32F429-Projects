@@ -1,0 +1,10 @@
+11:10:18 **** Build of configuration Debug for project uart_printf ****
+make -j4 all 
+arm-none-eabi-size  uart_printf.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5172	     92	   1900	   7164	   1bfc	uart_printf.elf
+Finished building: default.size.stdout
+ 
+
+11:10:19 Build Finished. 0 errors, 0 warnings. (took 278ms)
+

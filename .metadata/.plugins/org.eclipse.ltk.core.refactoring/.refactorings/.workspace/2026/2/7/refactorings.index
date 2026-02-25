@@ -1,0 +1,6 @@
+1770802337794	Rename resource 'toggle_led'
+1770802505150	Rename resource 'toggle_led_structure'
+1770913645246	Rename resource 'USER_LED_HEADR'
+1770914960239	Delete resource 'led_toggle_structure'
+1770915107155	Delete resource 'led_toggle_header'
+1771047375236	Delete resource 'adc'

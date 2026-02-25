@@ -1,0 +1,10 @@
+21:57:28 **** Incremental Build of configuration Debug for project 11_systick_timer ****
+make -j4 all 
+arm-none-eabi-size  11_systick_timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5332	     92	   1900	   7324	   1c9c	11_systick_timer.elf
+Finished building: default.size.stdout
+ 
+
+21:57:29 Build Finished. 0 errors, 0 warnings. (took 254ms)
+
